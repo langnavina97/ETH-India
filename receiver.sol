@@ -14,13 +14,13 @@ contract ReceiverIndex is IXReceiver {
   // Number of pings this contract has received from the Ping contract
   uint256 public pings;
 
-  IIndexSwap public index;
+  IIndexSwap publßic index;
 
   // The connext contract deployed on the same domain as this contract
   IConnext public immutable connext;
 
   IUniswapV2Router02 uniswapRouter;
-
+  // work done
 
   constructor(IConnext _connext, IIndexSwap _index, address _router) {
     connext = _connext;
